@@ -9,6 +9,15 @@ h6 {
     margin-bottom: 21px;
 }
 
+label {
+    text-align: left;
+}
+
+.tution-div {
+    display: flex;
+    align-items: flex-end;
+}
+
 .tution-fee {
     padding-top: 4px;
     padding-right: 30px;
@@ -56,6 +65,10 @@ span {
 .cart-1 {
     padding: 0;
     margin-bottom: 18px;
+}
+
+.cart-details hr {
+    display: none;
 }
 
 .btn-primary {
@@ -143,6 +156,56 @@ span {
     box-shadow: none;
 }
 
+.form-check-input:checked[type=checkbox] {
+    border-radius: 5px;
+}
+
+.payment {
+    background-color: #EBF6FE;
+}
+
+.full-payment {
+    background-color: #fff;
+    border-radius: 12px;
+}
+
+.authorized.collapse-on-sm {
+    display: none;
+}
+
+.authorized .collapse-on-sm.show {
+    display: block;
+    max-height: auto;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.authorized .collapsed {
+    width: 100%;
+    display: flex;
+    background-color: #FFF;
+    color: #000;
+    border: none;
+    border-radius: 12px;
+}
+
+.authorized button {
+    width: 100%;
+    display: flex;
+    background-color: #000025;
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.authorized-content {
+    background-color: #fff;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
 .buy-button {
     background-color: #F18234;
     color: #fff;
@@ -176,6 +239,9 @@ span {
         list-style: none;
         color: #000;
     }
+    .cart-details hr {
+        display: block;
+    }
     .para p {
         width: auto;
     }
@@ -203,6 +269,43 @@ span {
         align-items: center;
         justify-content: center;
         color: #F18234;
+    }
+    .remove-mob button {
+        background-color: transparent;
+        color: #FC0D1B;
+        border: none;
+    }
+    .collapse-on-sm {
+        display: none;
+    }
+    .collapse-on-sm.show {
+        display: block;
+        max-height: auto;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+    }
+    /* .btn-primary {
+        margin-left: 20px;
+    } */
+    .accordion-button {
+        display: flex;
+        padding: 12px;
+    }
+    .payment {
+        background-color: #000025;
+    }
+    .authorized button {
+        width: 100%;
+        display: flex;
+        background-color: #fff;
+        color: #000;
+        border: none;
+        border-radius: 12px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    .tution-div {
+        display: none;
     }
     .total-div {
         display: flex;
