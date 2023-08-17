@@ -58,6 +58,7 @@ span {
 }
 
 .cart-content {
+    z-index: 1;
     border-radius: 8px;
     background-color: #EBF6FE;
 }
@@ -162,6 +163,35 @@ span {
 
 .payment {
     background-color: #EBF6FE;
+    border-radius: 8px;
+    margin-top: -12px;
+    padding-top: 16px;
+}
+
+.payment h5 {
+    font-family: Poppins;
+    font-size: 14px;
+    margin: 0;
+}
+
+.full-payment .collapsed {
+    /* width: 100%; */
+    display: flex;
+    background-color: #FFF;
+    color: #000;
+    border: none;
+    border-radius: 12px;
+}
+
+.full-payment button {
+    width: 100%;
+    display: flex;
+    background-color: #000025;
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
 }
 
 .full-payment {
@@ -293,6 +323,21 @@ span {
     }
     .payment {
         background-color: #000025;
+    }
+    .payment h5 {
+        font-family: Poppins;
+        font-size: 14px;
+        color: #fff;
+    }
+    .full-payment button {
+        width: 100%;
+        display: flex;
+        background-color: #fff;
+        color: #000;
+        border: none;
+        border-radius: 12px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
     }
     .authorized button {
         width: 100%;
