@@ -134,11 +134,7 @@ span {
     display: none;
 } */
 
-.collapse-on-sm {
-    display: flex;
-}
-
-.collapse-on-sm.show {
+.collapse:not(.show) {
     display: flex;
 }
 
@@ -332,10 +328,13 @@ span {
         color: #FC0D1B;
         border: none;
     }
-    .collapse-on-sm {
+    .collapse {
         display: none;
     }
-    .collapse-on-sm.show {
+    .collapse:not(.show) {
+        display: none;
+    }
+    .collapse.show {
         display: block;
         max-height: auto;
         overflow: hidden;
