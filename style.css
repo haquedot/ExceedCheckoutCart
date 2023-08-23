@@ -134,8 +134,12 @@ span {
     display: none;
 } */
 
-.collapse:not(.show) {
+.cart-details .collapse:not(.show) {
     display: flex;
+}
+
+.collapse:not(.show) {
+    display: none;
 }
 
 .accordion-button {
@@ -329,6 +333,9 @@ span {
         border: none;
     }
     .collapse {
+        display: none;
+    }
+    .cart-details .collapse:not(.show) {
         display: none;
     }
     .collapse:not(.show) {
