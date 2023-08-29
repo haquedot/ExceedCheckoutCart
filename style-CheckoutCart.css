@@ -380,4 +380,7 @@ span {
     .width-div {
         width: 100%;
     }
+    .accordion-button::after {
+        background-image: none;
+    }
 }
